@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Fetching the Figtree font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+
+  <style>
+      body {
+          font-family: 'Figtree', sans-serif;
+          background-color: #F4D04E;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 100vh;
+          margin: 0;
+      }
+
+      main {
+          width: 100%;
+          display: flex;
+          justify-content: left;
+          align-items: left;
+      }
+
+      .container {
+          width: 100%;
+          max-width: 1200px;
+          margin: 40px auto;
+          padding: 20px;
+          background-color: #F4D04E;
+          display: flex;
+          justify-content: center;
+      }
+
+      .blog {
+          background-color: white;
+          border-radius: 20px;
+          border: 1px solid black;
+          width: 320px;
+          overflow: hidden;
+          transition: transform 0.2s;
+          padding: 10px; 
+          box-shadow: 8px 8px;
+      }
+
+      .blog img {
+          display: block;
+          margin: 10px auto 20px;
+          height: 180px;
+          width: 300px;
+          object-fit: cover;
+          border-radius: 10px;
+      }
+
+      .blog .content {
+          padding: 0px 20px 0px 20px;
+          text-align: left;
+          margin-top: 5px;
+      }
+
+      .blog h1 {
+          width: 25%;
+          padding: 5px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 120%;
+          color: #000000;
+          background-color: #F4D04E;
+          text-align: center;
+          border-radius: 3px;
+      }
+
+      .blog h2 {
+          margin-bottom: 10px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 150%;
+          color: #000000;
+      }
+
+      .blog h2:hover {
+          color: #F4D04E;
+          cursor: pointer;
+      }
+
+      .blog p {
+          color: #68778d;
+          font-weight: 400; 
+          font-size: 14px;
+          line-height: 140%;
+      }
+
+      .blog .content .published {
+          font-weight: 400; 
+          color: #000000; 
+      }
+
+      .avatar {
+          display: flex;
+          align-items: center; 
+          margin-top: 20px;
+      }
+
+      .avatar img {
+          display: block;
+          width: 30px;
+          height: 30px;
+          margin: 10px;      
+      }
+
+      .avatar h3 {
+          font-size: 14px;
+          color: #000000;
+          justify-content: left;
+      }
+  </style>
+</head>
+<body>
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <div class="blog">
+        <img src="./assets/images/illustration-article.svg" alt="Illustration Article">
+        <div class="content">
+          <h1>Learning</h1>
+          <p class="published">Published 21 Dec 2023</p>
+          <h2>HTML & CSS foundations</h2>
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+          <!-- Avatar Section -->
+          <div class="avatar">
+            <img src="./assets/images/image-avatar.webp" alt="avatar">
+            <h3>Greg Hooper</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
